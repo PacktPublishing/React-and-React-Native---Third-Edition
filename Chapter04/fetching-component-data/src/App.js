@@ -1,16 +1,16 @@
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { Fragment, useEffect, useState } from "react";
 
 function fetchUser() {
   return new Promise(resolve => {
     setTimeout(() => {
-      resolve({ id: 1, name: 'Adam' });
+      resolve({ id: 1, name: "Adam" });
     }, 1000);
   });
 }
 
 export default function App() {
-  const [id, setId] = useState('loading...');
-  const [name, setName] = useState('loading...');
+  const [id, setId] = useState("loading...");
+  const [name, setName] = useState("loading...");
 
   useEffect(() => {
     fetchUser().then(user => {
