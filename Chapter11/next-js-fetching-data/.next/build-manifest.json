@@ -1,0 +1,24 @@
+{
+  "devFiles": [
+    "static/development/dll/dll_9e2a3f9838424feeb96c.js",
+    "static/development/dll/dll_9e2a3f9838424feeb96c.js.map"
+  ],
+  "pages": {
+    "/_app": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/_error": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/first": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/second": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ]
+  }
+}
