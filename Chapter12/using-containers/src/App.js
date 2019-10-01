@@ -1,5 +1,5 @@
+import "typeface-roboto";
 import React, { Fragment } from "react";
-import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
 import Container from "@material-ui/core/Container";
 
@@ -12,7 +12,6 @@ export default function App() {
 
   return (
     <Fragment>
-      <CssBaseline />
       <Container maxWidth="sm">
         <Typography style={textStyle}>sm</Typography>
       </Container>

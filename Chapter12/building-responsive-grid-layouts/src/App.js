@@ -1,3 +1,4 @@
+import "typeface-roboto";
 import React from "react";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
@@ -33,6 +34,9 @@ export default function App() {
               </Grid>
               <Grid item xs={12}>
                 <Typography style={navStyle}>Nav Item 3</Typography>
+              </Grid>
+              <Grid item xs={12}>
+                <Typography style={navStyle}>Nav Item 4</Typography>
               </Grid>
             </Grid>
           </Paper>

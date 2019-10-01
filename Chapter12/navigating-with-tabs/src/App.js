@@ -1,3 +1,4 @@
+import "typeface-roboto";
 import React, { Fragment } from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import AppBar from "@material-ui/core/AppBar";
