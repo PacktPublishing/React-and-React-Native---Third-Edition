@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { Text, View } from "react-native";
 import styles from "./styles";
 
-// For fetching human-readable address info.
 const URL = "https://maps.google.com/maps/api/geocode/json?latlng=";
 
 export default function WhereAmI() {
