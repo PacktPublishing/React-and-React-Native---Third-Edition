@@ -1,55 +1,55 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet } from "react-native";
 
 export default StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: 'ghostwhite',
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "ghostwhite"
   },
 
   text: {
-    color: 'slategrey',
+    color: "slategrey"
   },
 
   modalContainer: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center"
   },
 
   modalInner: {
-    backgroundColor: 'azure',
+    backgroundColor: "azure",
     padding: 20,
     borderWidth: 1,
-    borderColor: 'lightsteelblue',
+    borderColor: "lightsteelblue",
     borderRadius: 2,
-    alignItems: 'center',
+    alignItems: "center"
   },
 
   modalInnerError: {
-    backgroundColor: 'lightcoral',
-    borderColor: 'darkred',
+    backgroundColor: "lightcoral",
+    borderColor: "darkred"
   },
 
   modalText: {
     fontSize: 16,
     margin: 5,
-    color: 'slategrey',
+    color: "slategrey"
   },
 
   modalTextError: {
     fontSize: 18,
-    color: 'darkred',
+    color: "darkred"
   },
 
   modalButton: {
-    fontWeight: 'bold',
+    fontWeight: "bold",
     margin: 5,
-    color: 'slategrey',
+    color: "slategrey"
   },
 
   modalButtonError: {
-    color: 'black',
-  },
+    color: "black"
+  }
 });

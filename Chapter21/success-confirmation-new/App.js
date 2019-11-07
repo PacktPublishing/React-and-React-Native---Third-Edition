@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { View, Text } from "react-native";
-import styles from "./styles";
-import ErrorModal from "./ErrorModal";
+import ConfirmationModal from "./ConfirmationModal";
 import ConfirmationAlert from "./ConfirmationAlert";
+import styles from "./styles";
 
 export default function App() {
   const [modalVisible, setModalVisible] = useState(false);
@@ -18,27 +18,26 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <ErrorModal
+      <ConfirmationModal
         animationType="fade"
         visible={modalVisible}
         onPressConfirm={toggleModal}
         onPressCancel={toggleModal}
       />
       <ConfirmationAlert
-        message="Failed to do the thing..."
+        title="Are you sure?"
+        message="For realz?"
         visible={alertVisible}
         buttons={[
-          {
-            text: "Dismiss",
-            onPress: toggleAlert
-          }
+          { text: "Nope", onPress: toggleAlert },
+          { text: "Yep", onPress: toggleAlert }
         ]}
       />
       <Text style={styles.text} onPress={toggleModal}>
-        Show Error Modal
+        Show Confirmation Modal
       </Text>
       <Text style={styles.text} onPress={toggleAlert}>
-        Show Error Alert
+        Show Confimation Alert
       </Text>
     </View>
   );

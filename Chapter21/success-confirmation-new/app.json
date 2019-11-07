@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Activity Modals",
-    "slug": "activity-modals-new",
+    "name": "Success Confirmation",
+    "slug": "success-confirmation-new",
     "privacy": "public",
     "sdkVersion": "35.0.0",
     "platforms": [
