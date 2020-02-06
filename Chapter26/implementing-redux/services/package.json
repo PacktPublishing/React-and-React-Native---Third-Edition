@@ -1,0 +1,21 @@
+{
+  "name": "services",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "esm": "^3.2.25",
+    "express": "^4.16.3",
+    "immutable": "^4.0.0-rc.12"
+  },
+  "scripts": {
+    "start": "node -r esm index.js"
+  },
+  "devDependencies": {},
+  "babel": {
+    "plugins": [
+      "transform-es2015-modules-commonjs"
+    ]
+  }
+}

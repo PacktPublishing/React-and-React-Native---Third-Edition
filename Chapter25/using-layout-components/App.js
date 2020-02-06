@@ -3,7 +3,7 @@ import { Card, CardItem, Body, Text } from "native-base";
 import { Col, Row, Grid } from "react-native-easy-grid";
 import Container from "./Container";
 
-export default function App({ navigation }) {
+export default function App() {
   return (
     <Container title="Using Layout Components">
       <Grid>

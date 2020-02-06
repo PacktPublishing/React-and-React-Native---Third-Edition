@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { List, ListItem, Text, Left, Right, Icon } from "native-base";
 import Container from "./Container";
 
-export default function App({ navigation }) {
+export default function App() {
   const [items, setItems] = useState(
     new Array(100)
       .fill(null)
