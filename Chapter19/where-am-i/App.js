@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Text, View } from "react-native";
 import styles from "./styles";
 
-const URL = "https://maps.google.com/maps/api/geocode/json?latlng=";
+const API_KEY = "";
+const URL = `https://maps.google.com/maps/api/geocode/json?key=${API_KEY}&latlng=`;
 
 export default function WhereAmI() {
   const [address, setAddress] = useState("loading...");
@@ -14,9 +15,12 @@ export default function WhereAmI() {
       setLongitude(longitude);
       setLatitude(latitude);
       fetch(`${URL}${latitude},${longitude}`)
-        .then(resp => resp.json(), e => console.error(e))
-        .then(({ results: [{ formatted_address }] }) => {
-          setAddress(formatted_address);
+        .then(
+          (resp) => resp.json(),
+          (e) => console.error(e)
+        )
+        .then(({ results }) => {
+          setAddress(results[0].formatted_address);
         });
     }
 
@@ -24,7 +28,7 @@ export default function WhereAmI() {
 
     let watcher = navigator.geolocation.watchPosition(
       setPosition,
-      err => console.error(err),
+      (err) => console.error(err),
       { enableHighAccuracy: true }
     );
 
